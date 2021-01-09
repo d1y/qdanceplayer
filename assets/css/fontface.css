@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Avenir LT Std Black';
+  src: url("../fonts/avenirltstdBlack.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 750;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std Medium';
+  src: url("../fonts/avenirltstdMedium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+/*# sourceMappingURL=fontface.css.map */

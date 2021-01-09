@@ -1,0 +1,188 @@
+/*****************************
+*
+*   Dark
+*
+*****************************/
+/*****************************
+*
+*   Window
+*
+*****************************/
+.windowRadius {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  z-index: 0;
+  background-color: rgba(28, 28, 28, 0.85);
+  overflow: hidden;
+}
+
+/*****************************
+*
+*   Current Track
+*
+*****************************/
+.currentTrackOverlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.currentTrackPlayButton {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+
+#playButton {
+  cursor: pointer;
+  z-index: 4;
+  -webkit-app-region: none;
+  -webkit-animation: scale-up-center 1s ease-in-out both;
+}
+
+#currentTrackImage {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.currentTrackDescription {
+  position: absolute;
+  top: 9px;
+  width: 290px;
+  left: 122px;
+  -webkit-app-region: drag;
+}
+
+.currentTrackDescription h2 {
+  font-family: "Avenir LT Std Black";
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.currentTrackDescription p {
+  font-family: "Avenir LT Std Medium";
+  color: #AEAEAE;
+  margin-top: -12px;
+  font-size: 12px;
+  line-height: normal;
+}
+
+/*****************************
+*
+*   Volume
+*
+******************************/
+#volumeEnabled {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../images/dark/volumeEnabled.svg") no-repeat;
+}
+
+#volumeMiddle {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: url("../images/dark/volumeMiddle.svg") no-repeat;
+}
+
+#volumeDisabled {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: url("../images/dark/volumeDisabled.svg") no-repeat;
+}
+
+#volumeSlider {
+  display: none;
+  background: #181C1D;
+  border-radius: 9.6px 0px 0px 9.6px;
+  width: 125px;
+  height: 32px;
+  position: relative;
+  margin-left: -118px;
+  margin-top: -32px;
+  z-index: 1;
+  -webkit-app-region: none;
+}
+
+.volumeRange {
+  -webkit-appearance: none;
+  outline: none;
+  width: 100px;
+  height: 4px;
+  margin-left: 10px;
+  margin-top: 14px;
+  background: -webkit-gradient(linear, right top, left top, from(#F16C6C), color-stop(27.08%, #C3D148), color-stop(59.33%, #35DC96));
+  background: linear-gradient(270deg, #F16C6C 0%, #C3D148 27.08%, #35DC96 59.33%);
+  border-radius: 24px;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+}
+
+.volumeRange::-webkit-slider-runnable-track {
+  height: 4px;
+  -webkit-appearance: none;
+}
+
+.volumeRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 16px;
+  height: 16px;
+  margin-top: -6px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.35);
+}
+
+/*****************************
+*
+*   Window Controls
+*
+******************************/
+.controls {
+  width: 32px;
+  height: 76px;
+  position: absolute;
+  top: 12px;
+  left: 422px;
+  cursor: pointer;
+}
+
+#close {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: url("../images/dark/close.svg") no-repeat;
+}
+
+#close:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: url("../images/dark/closeHover.svg") no-repeat;
+}
+/*# sourceMappingURL=dark.css.map */

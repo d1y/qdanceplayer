@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mini Player</title>
+  <meta name="description" content="A mini player.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/global.css">
+  <script>
+    function getStylesheet() {
+    var currentTime = new Date().getHours()
+        if (0 <= currentTime && currentTime < 8) {
+          document.write("<link rel='stylesheet' href='assets/css/dark.css'>")
+        }
+        if (8 <= currentTime && currentTime <= 20) {
+          document.write("<link rel='stylesheet' href='assets/css/light.css'>")
+        }
+        if (20 <= currentTime && currentTime < 24) {
+          document.write("<link rel='stylesheet' href='assets/css/dark.css'>")
+        }
+    }
+  
+    getStylesheet()
+    </script>
+
+</head>
+  <body>
+
+  <div class="windowRadius">
+
+    <section class="currentTrack">
+      
+      <div class="currentTrackPlayButton">
+        <img id="playButton" src="assets/images/play.svg" alt="Play Button Shape" accesskey="p">
+      </div>
+
+      <div class="currentTrackCover">
+          <img class="currentTrackOverlay" src="assets/images/coverOverlay.svg" alt="Cover Overlay">
+          <img id="currentTrackImage" src="assets/images/albumPlaceholder.svg" alt="Current Track Image">
+      </div>
+
+      <div class="currentTrackDescription">
+        <h2 id="currentTrackTitle"></h2>
+        <p id="currentTrackArtist"></p>
+      </div>
+
+    </section><!-- end of current track -->
+
+    <section class="controls">
+
+      <div id="close">
+
+      </div>
+
+      <div id="volumeControl">
+        <div id="volumeEnabled" accesskey="m"></div>
+        <div id="volumeMiddle"></div>
+        <div id="volumeDisabled" accesskey="m"></div>
+
+        <div id="volumeSlider">
+          <input type="range" min="0" max="1" value="0.8" step="0.1" class="volumeRange" id="volumeData">
+        </div>
+      </div>
+
+    </section><!-- end of controls -->
+
+    <script src="scripts/index.js"></script>
+
+  </div>
+
+  </body>
+</html>

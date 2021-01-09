@@ -1,0 +1,25 @@
+/*****************************
+*
+*   Imports
+*
+*****************************/
+@import '../../node_modules/normalize.scss/normalize.scss';
+@import 'fontface.scss';
+@import 'animations.scss';
+
+/*****************************
+*
+*   Variables
+*
+*****************************/
+
+/*****************************
+*
+*   Window
+*
+*****************************/
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
